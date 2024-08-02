@@ -129,9 +129,13 @@
   <ItemGroup>
     <ClCompile Include="main.c" />
     <ClCompile Include="tick.c" />
+    <ClCompile Include="UserHandler.c" />
+    <ClCompile Include="UserInfo.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tick.h" />
+    <ClInclude Include="UserHandler.h" />
+    <ClInclude Include="UserInfo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

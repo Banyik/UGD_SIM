@@ -19,6 +19,18 @@
     <Filter Include="Header Files\Tick">
       <UniqueIdentifier>{d77a4b0d-a3d9-4534-9213-dc8f576f850d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\User">
+      <UniqueIdentifier>{99cad6fc-0a80-48e6-951e-623a6ce89d52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Content">
+      <UniqueIdentifier>{a651ebf6-405e-482d-a65b-7fc38b863081}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\User">
+      <UniqueIdentifier>{ebe41b7e-763d-43ad-b2f1-ad6f96081cce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Content">
+      <UniqueIdentifier>{5b586bbb-947e-4efe-b21a-4519ffeaf462}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
@@ -27,10 +39,22 @@
     <ClCompile Include="tick.c">
       <Filter>Source Files\Tick</Filter>
     </ClCompile>
+    <ClCompile Include="UserInfo.c">
+      <Filter>Source Files\User</Filter>
+    </ClCompile>
+    <ClCompile Include="UserHandler.c">
+      <Filter>Source Files\User</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tick.h">
       <Filter>Header Files\Tick</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInfo.h">
+      <Filter>Header Files\User</Filter>
+    </ClInclude>
+    <ClInclude Include="UserHandler.h">
+      <Filter>Header Files\User</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
