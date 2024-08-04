@@ -1,31 +1,31 @@
 #pragma once
 
-struct Info{
+typedef struct{
 	unsigned short race;
 	unsigned short gender;
 	unsigned short identity;
 	unsigned short nationality;
 	unsigned short age;
 	unsigned short ideology;
-};
+} Info;
 
-struct Info* initialize_info();
+Info* initialize_info();
 
-struct Personality {
+typedef struct{
 	//The Big Five Personalities
 	unsigned short TODO;
-};
+} Personality;
 
-struct Personality* initialize_personality();
+Personality* initialize_personality();
 
-struct FavoriteVideoCategories {
+typedef struct{
 	unsigned short TODO;
-};
+} FavoriteVideoCategories;
 
-struct FavoriteVideoCategories* initialize_favorite_video_categories();
+FavoriteVideoCategories* initialize_favorite_video_categories();
 
-struct FavoriteMusicCategories {
+typedef struct{
 	unsigned short TODO;
-};
+} FavoriteMusicCategories;
 
-struct FavoriteMusicCategories* initialize_favorite_music_categories();
+FavoriteMusicCategories* initialize_favorite_music_categories();

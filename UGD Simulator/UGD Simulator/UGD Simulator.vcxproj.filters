@@ -31,6 +31,12 @@
     <Filter Include="Header Files\Content">
       <UniqueIdentifier>{5b586bbb-947e-4efe-b21a-4519ffeaf462}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Base">
+      <UniqueIdentifier>{fc57d72e-6529-4977-b2f8-4e6588384637}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Base">
+      <UniqueIdentifier>{56a999f1-cfd7-49db-aa54-fe165a2a0037}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
@@ -45,6 +51,9 @@
     <ClCompile Include="UserHandler.c">
       <Filter>Source Files\User</Filter>
     </ClCompile>
+    <ClCompile Include="base.c">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tick.h">
@@ -55,6 +64,9 @@
     </ClInclude>
     <ClInclude Include="UserHandler.h">
       <Filter>Header Files\User</Filter>
+    </ClInclude>
+    <ClInclude Include="base.h">
+      <Filter>Header Files\Base</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,4 +1,7 @@
-﻿  UserHandler.c
-C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\UGD Simulator\UserHandler.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\UGD Simulator\UserHandler.c(9,9): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'Info'
+﻿  UserInfo.c
+C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\UGD Simulator\UserInfo.c(3,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  base.c
+C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\UGD Simulator\base.c(4,2): warning C4013: 'printf' undefined; assuming extern returning int
+C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\UGD Simulator\base.c(5,2): warning C4013: 'exit' undefined; assuming extern returning int
+  Generating Code...
   UGD Simulator.vcxproj -> C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\x64\Debug\UGD Simulator.exe

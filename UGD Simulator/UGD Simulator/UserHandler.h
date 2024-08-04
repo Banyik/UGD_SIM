@@ -1,11 +1,11 @@
 #pragma once
-#include "UserInfo.h";
+#include "UserInfo.h"
 
-struct User {
-	struct Info userInfo;
-	struct Personality userPersonality;
-	struct FavoriteVideoCategories favoriteVideoCategories;
-	struct FavoriteMusicCategories favoriteMusicCategories;
-};
+typedef struct {
+	Info* userInfo;
+	Personality* userPersonality;
+	FavoriteVideoCategories* favoriteVideoCategories;
+	FavoriteMusicCategories* favoriteMusicCategories;
+} User;
 
 void create_user_properties();
