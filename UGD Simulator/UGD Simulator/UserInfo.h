@@ -1,6 +1,7 @@
 #pragma once
 
 typedef struct{
+	unsigned long id;
 	unsigned short race;
 	unsigned short gender;
 	unsigned short identity;

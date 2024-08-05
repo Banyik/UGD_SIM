@@ -9,3 +9,7 @@ typedef struct {
 } User;
 
 void create_user_properties();
+
+void update_users();
+
+void clean_users();

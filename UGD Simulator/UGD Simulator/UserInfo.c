@@ -2,11 +2,14 @@
 #include "UserInfo.h"
 #include "base.h";
 
+unsigned long u_id = 0;
+
 Info* initialize_info() {
 	Info* userInfo = malloc(sizeof(Info));
 	if (userInfo == NULL) {
 		errlog("UserInfo.c : FAILED TO ALLOCATE USER_INFO MEMORY");
 	}
+	userInfo->id = u_id++;
 	userInfo->age = 5;
 	userInfo->gender = 0;
 	userInfo->identity = 0;
