@@ -2,6 +2,14 @@
 #include<stdio.h>
 #include <stdlib.h>
 
+typedef enum {
+	INT,
+	FLOAT
+} type;
+
+void add_to_string_array(char* str);
+void free_to_string(char* str);
+
 void new_array(void** arr, size_t typeSize, unsigned int size);
 
 void errlog(char *message);
@@ -12,4 +20,4 @@ void log(char* message);
 void logn_a(char* message, char** args);
 void logn(char* message);
 
-char* to_string(int num);
+char* to_string(void* num, type t);

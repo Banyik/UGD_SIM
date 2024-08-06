@@ -15,6 +15,6 @@ ContentInfo* initialize_content_info() {
 	contentInfo->dislikes = 0;
 	contentInfo->likes = 0;
 	contentInfo->length = rand() % 1000;
-	contentInfo->popularity = (rand() % 100) / 100;
+	contentInfo->popularity = (rand() % 100) * 0.01f;
 	contentInfo->categories = (unsigned short*){ NULL };
 };

@@ -77,9 +77,15 @@ void logn(char* message) {
 	printf("%s\n", message);
 }
 
-char* to_string(int num) {
+char* to_string(void* num, type t) {
 	char* str = malloc(12);
-	snprintf(str, sizeof(str), "%d", num);
+	if (t == INT) {
+		snprintf(str, 12, "%d", *(int*)num);
+	}
+	else {
+		float f = *(float*)num;
+		snprintf(str, 12, "%.6f", f);
+	}
 	add_to_string_array(str);
 	return str;
 }
