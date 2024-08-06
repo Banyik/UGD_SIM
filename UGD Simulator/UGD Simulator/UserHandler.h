@@ -2,7 +2,8 @@
 #include "UserInfo.h"
 
 typedef struct {
-	Info* userInfo;
+	UserInfo* userInfo;
+	ActionInfo* userActionInfo;
 	Personality* userPersonality;
 	FavoriteVideoCategories* favoriteVideoCategories;
 	FavoriteMusicCategories* favoriteMusicCategories;
@@ -10,6 +11,6 @@ typedef struct {
 
 void create_user_properties();
 
-void update_users();
+void update_users(unsigned long currentTick);
 
 void clean_users();

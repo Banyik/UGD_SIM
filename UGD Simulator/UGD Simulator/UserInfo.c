@@ -4,8 +4,8 @@
 
 unsigned long u_id = 0;
 
-Info* initialize_info() {
-	Info* userInfo = malloc(sizeof(Info));
+UserInfo* initialize_info() {
+	UserInfo* userInfo = malloc(sizeof(UserInfo));
 	if (userInfo == NULL) {
 		errlog("UserInfo.c : FAILED TO ALLOCATE USER_INFO MEMORY");
 	}
@@ -17,6 +17,15 @@ Info* initialize_info() {
 	userInfo->nationality = 0;
 	userInfo->race = 0;
 	return userInfo;
+};
+
+ActionInfo* initialize_action_info() {
+	ActionInfo* userActionInfo = malloc(sizeof(ActionInfo));
+	if (userActionInfo == NULL) {
+		errlog("UserInfo.c : FAILED TO ALLOCATE USER_ACTION_INFO MEMORY");
+	}
+	userActionInfo->tictToFinish = 0;
+	return userActionInfo;
 };
 
 Personality* initialize_personality() {

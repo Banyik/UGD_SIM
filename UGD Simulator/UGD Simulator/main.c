@@ -2,6 +2,6 @@
 #include "tick.h"
 
 int main() {
-	tick();
+	start_tick();
 	return 0;
 }

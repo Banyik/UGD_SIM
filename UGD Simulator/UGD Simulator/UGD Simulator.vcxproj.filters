@@ -54,6 +54,12 @@
     <ClCompile Include="base.c">
       <Filter>Source Files\Base</Filter>
     </ClCompile>
+    <ClCompile Include="ContentInfo.c">
+      <Filter>Source Files\Content</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentHandler.c">
+      <Filter>Source Files\Content</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tick.h">
@@ -67,6 +73,12 @@
     </ClInclude>
     <ClInclude Include="base.h">
       <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentInfo.h">
+      <Filter>Header Files\Content</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentHandler.h">
+      <Filter>Header Files\Content</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

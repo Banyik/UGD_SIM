@@ -1,10 +1,48 @@
 #include "base.h"
 #include <stdlib.h>
-#define arrSize(x) (int)(sizeof(x) / sizeof((x)[0]))
+#include <stdio.h>
 
-void* new_array(void* type, unsigned int size) {
-	type = malloc(size * sizeof(type));
-	return type;
+char** to_string_arr = NULL;
+
+void add_to_string_array(char* str) {
+	if (to_string_arr == NULL) {
+		to_string_arr = malloc(20 * sizeof(char*));
+		for (size_t i = 0; i < 20; i++) {
+			to_string_arr[i] = NULL;
+		}
+		to_string_arr[0] = str;
+	}
+	else {
+		for (size_t i = 0; i < 20; i++)
+		{
+			if (to_string_arr[i] == NULL) {
+				to_string_arr[i] = str;
+				break;
+			}
+		}
+	}
+}
+
+void free_to_string(char* str) {
+	for (size_t i = 0; i < 20; i++)
+	{
+		if (to_string_arr[i] == str) {
+			free(to_string_arr[i]);
+			break;
+		}
+	}
+}
+
+int arr_size(void** arr) {
+	int count = 0;
+	while (arr[count] != NULL) {
+		count++;
+	}
+	return count;
+}
+
+void new_array(void **arr, size_t typeSize, unsigned int size) {
+	*arr = malloc(size * typeSize);
 }
 
 void errlog(char *message) {
@@ -14,9 +52,10 @@ void errlog(char *message) {
 
 void log_a(char *message, char **args) {
 	printf("%s", message);
-	for (size_t i = 0; i < arrSize(args); i++)
+	for (size_t i = 0; i < arr_size(args); i++)
 	{
 		printf("%s", args[i]);
+		free_to_string(args[i]);
 	}
 }
 
@@ -26,10 +65,10 @@ void log(char* message) {
 
 void logn_a(char* message, char **args) {
 	printf("%s", message);
-
-	for (size_t i = 0; i < arrSize(args); i++)
+	for (size_t i = 0; i < arr_size(args); i++)
 	{
 		printf("%s", args[i]);
+		free_to_string(args[i]);
 	}
 	printf("\n");
 }
@@ -39,7 +78,8 @@ void logn(char* message) {
 }
 
 char* to_string(int num) {
-	char *str = malloc(10);
+	char* str = malloc(12);
 	snprintf(str, sizeof(str), "%d", num);
+	add_to_string_array(str);
 	return str;
 }

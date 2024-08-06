@@ -1,7 +1,8 @@
 #pragma once
 #include<stdio.h>
+#include <stdlib.h>
 
-void* new_array(void* type, unsigned int size);
+void new_array(void** arr, size_t typeSize, unsigned int size);
 
 void errlog(char *message);
 

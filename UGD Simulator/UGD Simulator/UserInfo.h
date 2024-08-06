@@ -8,9 +8,15 @@ typedef struct{
 	unsigned short nationality;
 	unsigned short age;
 	unsigned short ideology;
-} Info;
+} UserInfo;
 
-Info* initialize_info();
+UserInfo* initialize_info();
+
+typedef struct {
+	unsigned long tictToFinish;
+} ActionInfo;
+
+ActionInfo* initialize_action_info();
 
 typedef struct{
 	//The Big Five Personalities
