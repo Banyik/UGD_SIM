@@ -1,15 +1,8 @@
 ﻿  ContentHandler.c
 C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\UGD Simulator\ContentHandler.h(3,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\UGD Simulator\ContentHandler.c(17,8): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
-  ContentInfo.c
-  UserHandler.c
-C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\UGD Simulator\ContentHandler.h(3,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\UGD Simulator\UserHandler.c(16,11): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
-  UserInfo.c
-C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\UGD Simulator\UserInfo.c(3,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  base.c
-  tick.c
-C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\UGD Simulator\tick.c(11,5): warning C4013: 'create_content_properties' undefined; assuming extern returning int
-  Generating Code...
-C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\UGD Simulator\ContentInfo.c(20): warning C4716: 'initialize_content_info': must return a value
+C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\UGD Simulator\ContentHandler.c(18,8): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\UGD Simulator\ContentHandler.c(26,46): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\UGD Simulator\ContentHandler.c(36,112): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\UGD Simulator\ContentHandler.c(60,80): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\UGD Simulator\ContentHandler.c(64,12): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
   UGD Simulator.vcxproj -> C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\x64\Debug\UGD Simulator.exe

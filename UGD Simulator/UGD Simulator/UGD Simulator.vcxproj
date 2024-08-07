@@ -138,6 +138,7 @@
     <ClCompile Include="base.c" />
     <ClCompile Include="ContentHandler.c" />
     <ClCompile Include="ContentInfo.c" />
+    <ClCompile Include="DataStructures.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="tick.c" />
     <ClCompile Include="UserHandler.c" />
@@ -147,6 +148,7 @@
     <ClInclude Include="base.h" />
     <ClInclude Include="ContentHandler.h" />
     <ClInclude Include="ContentInfo.h" />
+    <ClInclude Include="DataStructures.h" />
     <ClInclude Include="tick.h" />
     <ClInclude Include="UserHandler.h" />
     <ClInclude Include="UserInfo.h" />

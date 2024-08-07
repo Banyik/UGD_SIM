@@ -24,7 +24,7 @@ ActionInfo* initialize_action_info() {
 	if (userActionInfo == NULL) {
 		errlog("UserInfo.c : FAILED TO ALLOCATE USER_ACTION_INFO MEMORY");
 	}
-	userActionInfo->tictToFinish = 0;
+	userActionInfo->tickToFinish = 0;
 	return userActionInfo;
 };
 

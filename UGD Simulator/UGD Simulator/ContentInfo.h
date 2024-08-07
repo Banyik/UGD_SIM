@@ -13,3 +13,4 @@ typedef struct {
 } ContentInfo;
 
 ContentInfo* initialize_content_info();
+float get_item_percentage(ContentInfo contentInfo);

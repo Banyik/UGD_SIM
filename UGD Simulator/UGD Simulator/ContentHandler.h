@@ -8,3 +8,4 @@ typedef struct {
 
 void create_content_properties();
 void interact_with_random_content(User u);
+Content get_best_content();

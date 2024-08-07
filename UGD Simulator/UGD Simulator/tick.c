@@ -23,6 +23,7 @@ void tick() {
 
         if (elapsed_time >= TICK) {
             update_users(ticks);
+            //TODO: Updatehandler: Another file which calls other functions at once.
             logn_a("Every user has been updated at tick: ", (char* []) { to_string(&ticks, INT), NULL });
             ticks++;
             last_time = current_time;

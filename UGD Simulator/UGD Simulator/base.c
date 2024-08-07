@@ -41,10 +41,6 @@ int arr_size(void** arr) {
 	return count;
 }
 
-void new_array(void **arr, size_t typeSize, unsigned int size) {
-	*arr = malloc(size * typeSize);
-}
-
 void errlog(char *message) {
 	printf("%s\n", message);
 	exit(1);

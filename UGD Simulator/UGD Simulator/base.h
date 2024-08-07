@@ -1,4 +1,5 @@
 #pragma once
+#include "DataStructures.h"
 #include<stdio.h>
 #include <stdlib.h>
 
@@ -7,10 +8,10 @@ typedef enum {
 	FLOAT
 } type;
 
+
+
 void add_to_string_array(char* str);
 void free_to_string(char* str);
-
-void new_array(void** arr, size_t typeSize, unsigned int size);
 
 void errlog(char *message);
 

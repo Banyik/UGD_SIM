@@ -13,7 +13,7 @@ typedef struct{
 UserInfo* initialize_info();
 
 typedef struct {
-	unsigned long tictToFinish;
+	unsigned long tickToFinish;
 } ActionInfo;
 
 ActionInfo* initialize_action_info();
