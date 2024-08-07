@@ -136,6 +136,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="base.c" />
+    <ClCompile Include="CommandHandler.c" />
     <ClCompile Include="ContentHandler.c" />
     <ClCompile Include="ContentInfo.c" />
     <ClCompile Include="DataStructures.c" />
@@ -146,6 +147,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="base.h" />
+    <ClInclude Include="CommandHandler.h" />
     <ClInclude Include="ContentHandler.h" />
     <ClInclude Include="ContentInfo.h" />
     <ClInclude Include="DataStructures.h" />

@@ -63,6 +63,9 @@
     <ClCompile Include="DataStructures.c">
       <Filter>Source Files\Base</Filter>
     </ClCompile>
+    <ClCompile Include="CommandHandler.c">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tick.h">
@@ -84,6 +87,9 @@
       <Filter>Header Files\Content</Filter>
     </ClInclude>
     <ClInclude Include="DataStructures.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandHandler.h">
       <Filter>Header Files\Base</Filter>
     </ClInclude>
   </ItemGroup>

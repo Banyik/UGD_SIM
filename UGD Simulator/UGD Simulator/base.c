@@ -73,6 +73,16 @@ void logn(char* message) {
 	printf("%s\n", message);
 }
 
+void logr_a(char* message, char** args) {
+	printf("%s", message);
+	for (size_t i = 0; i < arr_size(args); i++)
+	{
+		printf("%s", args[i]);
+		free_to_string(args[i]);
+	}
+	printf("\r");
+}
+
 char* to_string(void* num, type t) {
 	char* str = malloc(12);
 	if (t == INT) {

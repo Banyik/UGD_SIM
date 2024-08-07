@@ -1,6 +1,6 @@
 #pragma once
 #include "DataStructures.h"
-#include<stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 typedef enum {
@@ -20,5 +20,6 @@ void log(char* message);
 
 void logn_a(char* message, char** args);
 void logn(char* message);
+void logr_a(char* message, char** args);
 
 char* to_string(void* num, type t);

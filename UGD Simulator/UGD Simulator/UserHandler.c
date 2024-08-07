@@ -40,5 +40,5 @@ void update_users(unsigned long currentTick) {
 }
 
 void clean_users() {
-    free(&USER_users);
+    USER_users.Free(&USER_users);
 }

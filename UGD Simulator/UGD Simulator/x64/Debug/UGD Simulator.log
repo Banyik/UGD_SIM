@@ -1,8 +1,2 @@
-﻿  ContentHandler.c
-C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\UGD Simulator\ContentHandler.h(3,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\UGD Simulator\ContentHandler.c(18,8): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\UGD Simulator\ContentHandler.c(26,46): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\UGD Simulator\ContentHandler.c(36,112): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\UGD Simulator\ContentHandler.c(60,80): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\UGD Simulator\ContentHandler.c(64,12): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+﻿  CommandHandler.c
   UGD Simulator.vcxproj -> C:\Users\lenovo\Documents\GitHub\UGD_SIM\UGD Simulator\x64\Debug\UGD Simulator.exe

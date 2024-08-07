@@ -23,10 +23,10 @@ ContentInfo* initialize_content_info() {
 
 float get_item_percentage(ContentInfo* contentInfo) {
 	float percentage = 0;
-	percentage += contentInfo->views * 0.001f;
-	percentage += contentInfo->likes * 0.001f;
-	percentage -= contentInfo->dislikes * 0.001f;
-	percentage += contentInfo->popularity * 0.01f;
+	percentage += contentInfo->views * 0.00000001f;
+	percentage += contentInfo->likes * 0.00000001f;
+	percentage -= contentInfo->dislikes * 0.0000001f;
+	percentage += contentInfo->popularity * 0.001f;
 	//category percentage by userinfo
 	//length percentage by userinfo
 	return percentage;
