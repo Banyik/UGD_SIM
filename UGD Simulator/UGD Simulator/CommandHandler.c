@@ -34,9 +34,20 @@ void check_input() {
 #else
     if (read(STDIN_FILENO, &ch, 1) > 0) {
 #endif
-        if (ch == 'q') {
-            logn("Exiting...");
+        switch (ch)
+        {
+        case 'l':
+            enable_log();
+            break;
+        case 'q':
+            if (is_log_enabled() == 0) {
+                enable_log();
+            }
+            logn("Closing session...");
             stop_tick();
+            break;
+        default:
+            break;
         }
     }
 }

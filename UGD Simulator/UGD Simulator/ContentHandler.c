@@ -41,13 +41,13 @@ void interact_with_random_content(User u) {
 	choosenContent.contentInfo->views++;
 	u.userActionInfo->tickToFinish += choosenContent.contentInfo->length;
 
-	//logn_a("User ", (char* []) { to_string(&u.userInfo->id, INT), 
-	//							" started watching content with ID: ", 
-	//							to_string(&choosenContent.contentInfo->id, INT), 
-	//							"; Views: ", to_string(&choosenContent.contentInfo->views, INT), 
-	//							"; POP: ", 
-	//							to_string(&pop, FLOAT),
-	//							NULL });
+	logn_a("User ", (char* []) { to_string(&u.userInfo->id, INT), 
+								" started watching content with ID: ", 
+								to_string(&choosenContent.contentInfo->id, INT), 
+								"; Views: ", to_string(&choosenContent.contentInfo->views, INT), 
+								"; POP: ", 
+								to_string(&pop, FLOAT),
+								NULL });
 	CONTENT_choosenContents.Free(&CONTENT_choosenContents);
 	CONTENT_choosenContents = (Array){ 0 };
 }

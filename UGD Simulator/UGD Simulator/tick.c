@@ -28,8 +28,9 @@ void tick() {
         elapsed_time = (double)(current_time - last_time) * 10000 / CLOCKS_PER_SEC;
 
         if (elapsed_time >= TICK) {
-            check_input();
             update_users(ticks);
+            check_input();
+
             //TODO: Updatehandler: Another file which calls other functions at once.
             //if (ticks % 1000 == 0) {
             //    logn_a("Every user has been updated at tick: ", (char* []) { to_string(&ticks, INT), NULL });

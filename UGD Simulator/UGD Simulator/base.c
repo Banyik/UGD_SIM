@@ -47,6 +47,13 @@ void errlog(char *message) {
 }
 
 void log_a(char *message, char **args) {
+	if (logEnabled == 0) {
+		for (size_t i = 0; i < arr_size(args); i++)
+		{
+			free_to_string(args[i]);
+		}
+		return;
+	}
 	printf("%s", message);
 	for (size_t i = 0; i < arr_size(args); i++)
 	{
@@ -56,10 +63,20 @@ void log_a(char *message, char **args) {
 }
 
 void log(char* message) {
+	if (logEnabled == 0) {
+		return;
+	}
 	printf("%s", message);
 }
 
 void logn_a(char* message, char **args) {
+	if (logEnabled == 0) {
+		for (size_t i = 0; i < arr_size(args); i++)
+		{
+			free_to_string(args[i]);
+		}
+		return;
+	}
 	printf("%s", message);
 	for (size_t i = 0; i < arr_size(args); i++)
 	{
@@ -70,10 +87,20 @@ void logn_a(char* message, char **args) {
 }
 
 void logn(char* message) {
+	if (logEnabled == 0) {
+		return;
+	}
 	printf("%s\n", message);
 }
 
 void logr_a(char* message, char** args) {
+	if (logEnabled == 0) {
+		for (size_t i = 0; i < arr_size(args); i++)
+		{
+			free_to_string(args[i]);
+		}
+		return;
+	}
 	printf("%s", message);
 	for (size_t i = 0; i < arr_size(args); i++)
 	{
@@ -81,6 +108,21 @@ void logr_a(char* message, char** args) {
 		free_to_string(args[i]);
 	}
 	printf("\r");
+}
+
+void enable_log() {
+	if (logEnabled == 0) {
+		logEnabled = 1;
+		logn("Enabled logging");
+	}
+	else {
+		logn("Disabled logging");
+		logEnabled = 0;
+	}
+}
+
+int is_log_enabled() {
+	return logEnabled;
 }
 
 char* to_string(void* num, type t) {
